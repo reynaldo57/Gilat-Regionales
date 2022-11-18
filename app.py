@@ -15,6 +15,10 @@ def regionales():
 def nosotros():
     return render_template('sitio/nosotros.html')
 
+@app.route('/admin')
+def admin():
+    return render_template('admin/index.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 
