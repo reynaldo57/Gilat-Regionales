@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template
+from flask import render_template, request, redirect
 
 app=Flask(__name__)
 
@@ -26,6 +26,11 @@ def admin_login():
 @app.route('/admin/regionales')
 def admin_regionales():
     return render_template("admin/regionales.html")
+
+@app.route('/admin/regionales/guardar', methods=['POST'])
+def admin_regionales_guardar():
+    print(request.form['txtNombre'])
+    return redirect("/admin/regionales")
 
 if __name__ == '__main__':
     app.run(debug=True)
