@@ -1,6 +1,71 @@
 {% include 'admin/cabecera.html' %}
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-header">
+                    Datos de Region
+                </div>
+                <div class="card-body">
+                    <form action="" method="post">
+                        <div class="mb-3">
+                          <label for="txtNombre" class="form-label">Nombre</label>
+                          <input type="text"
+                            class="form-control" name="txtNombre" id="txtNombre" aria-describedby="helpId" placeholder="Escriba su Nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="txtImagen" class="form-label">Imagen</label>
+                            <input type="text"
+                              class="form-control" name="txtImagen" id="txtImagen" aria-describedby="helpId" placeholder="Seleccione Imagen">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="txtURL" class="form-label">URL descarga</label>
+                            <input type="text"
+                              class="form-control" name="txtURL" id="txtURL" aria-describedby="helpId" placeholder="Escriba la URL">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+
+                     </form>
+                    </div>
+                <div class="card-footer text-muted">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td>1</td>
+                            <td>Python</td>
+                            <td>imagen.jpg</td>
+                            <td>https://Python.org</td>
+                            <td>Eliminar</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
 
 
-administrador de regionales
+
 
 {% include 'admin/pie.html' %}
