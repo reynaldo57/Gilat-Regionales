@@ -29,7 +29,15 @@ def admin_regionales():
 
 @app.route('/admin/regionales/guardar', methods=['POST'])
 def admin_regionales_guardar():
-    print(request.form['txtNombre'])
+
+    _nombre=request.form['txtNombre']
+    _url=request.form['txtURL']
+    _archivo=request.files['txtImagen']
+
+    print(_nombre)
+    print(_url)
+    print(_archivo)
+    
     return redirect("/admin/regionales")
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@
                     Datos de Region
                 </div>
                 <div class="card-body">
-                    <form action="/admin/regionales/guardar" method="post">
+                    <form action="/admin/regionales/guardar" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
                           <label for="txtNombre" class="form-label">Nombre</label>
                           <input type="text"
@@ -17,7 +17,7 @@
 
                         <div class="mb-3">
                             <label for="txtImagen" class="form-label">Imagen</label>
-                            <input type="text"
+                            <input type="file"
                               class="form-control" name="txtImagen" id="txtImagen" aria-describedby="helpId" placeholder="Seleccione Imagen">
                         </div>
 
